@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.OrderDescription"
+    android:background="@color/background_color"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:id="@+id/ScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:paddingTop="32dp"
+                    android:background="@color/white">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="18dp"
+                        android:layout_weight="0.5"
+                        android:fontFamily="@font/roboto"
+                        android:padding="8dp"
+                        android:text="Pickup Location"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:drawableLeft="@drawable/baseline_add_24"
+                        android:drawablePadding="8dp"/>
+
+                    <TextView
+                        android:id="@+id/pickUpAddress"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Address"
+                        android:padding="8dp"
+                        android:textSize="14sp"
+                        android:textColor="@color/black"
+                        android:fontFamily="sans-serif-medium"
+                        android:layout_marginStart="2dp"
+                        android:layout_weight="1"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="8dp"
+                android:elevation="4dp"
+                android:layout_marginTop="4dp">
+
+                <LinearLayout
+                    android:id="@+id/dropLocation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="8dp"
+                    android:background="@color/white">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Add your drop location"
+                        android:fontFamily="@font/roboto"
+                        android:layout_weight="1"
+                        android:layout_marginStart="8dp"
+                        android:textSize="16sp"
+                        android:textAllCaps="true"
+                        android:drawableLeft="@drawable/baseline_add_24"
+                        android:drawablePadding="8dp"
+                        android:padding="8dp"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:layout_weight="0"
+                        android:src="@drawable/baseline_arrow_forward_ios_24"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="8dp"
+                android:elevation="4dp"
+                android:layout_marginTop="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="8dp"
+                    android:background="@color/white">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Order Details"
+                        android:fontFamily="@font/roboto"
+                        android:layout_weight="1"
+                        android:layout_marginStart="8dp"
+                        android:textSize="16sp"
+                        android:textAllCaps="true"
+                        android:padding="8dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Item Description :"
+                        android:fontFamily="@font/roboto"
+                        android:textSize="16sp"
+                        android:layout_weight="1"
+                        android:layout_marginStart="8dp"
+                        android:padding="8dp" />
+
+                    <EditText
+                        android:id="@+id/itemDescription"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:padding="8dp"
+                        android:inputType="text"
+                        android:hint="Descibe the item being shipped."/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Quantity :"
+                        android:fontFamily="@font/roboto"
+                        android:textSize="16sp"
+                        android:layout_weight="1"
+                        android:layout_marginStart="8dp"
+                        android:padding="8dp" />
+
+                    <EditText
+                        android:id="@+id/quantityOfItem"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:padding="8dp"
+                        android:inputType="number"
+                        android:hint="Number of item by unit."/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Weight and Size of the item :"
+                        android:fontFamily="@font/roboto"
+                        android:textSize="16sp"
+                        android:layout_weight="1"
+                        android:layout_marginStart="8dp"
+                        android:padding="8dp" />
+
+                    <EditText
+                        android:id="@+id/weightAndSize"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:padding="8dp"
+                        android:inputType="text"
+                        android:hint="Weight and size of one unit."/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Value of the goods:"
+                        android:fontFamily="@font/roboto"
+                        android:textSize="16sp"
+                        android:layout_weight="1"
+                        android:layout_marginStart="8dp"
+                        android:padding="8dp" />
+
+                    <EditText
+                        android:id="@+id/valueofGoods"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:padding="8dp"
+                        android:inputType="number"
+                        android:hint="For insurance purpose."/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Packaging Type :"
+                        android:fontFamily="@font/roboto"
+                        android:textSize="16sp"
+                        android:layout_weight="1"
+                        android:layout_marginStart="8dp"
+                        android:padding="8dp" />
+
+                    <EditText
+                        android:id="@+id/packagingType"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:padding="8dp"
+                        android:inputType="text"
+                        android:hint="Box, Pallet, etc."/>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Fragile Goods :"
+                        android:fontFamily="@font/roboto"
+                        android:textSize="16sp"
+                        android:layout_weight="1"
+                        android:layout_marginStart="8dp"
+                        android:padding="8dp" />
+
+                    <EditText
+                        android:id="@+id/fragileGoods"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:padding="8dp"
+                        android:inputType="text"
+                        android:hint="Yes or No."/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="8dp"
+                android:elevation="4dp"
+                android:layout_marginTop="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="8dp"
+                    android:background="@color/white">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Payment Mode :"
+                        android:textSize="18sp"
+                        android:layout_weight="1"
+                        android:layout_marginStart="8dp"
+                        android:padding="8dp" />
+
+                    <RadioButton
+                        android:id="@+id/paymentAtLoading"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginStart="8dp"
+                        android:text="Payment at Loading"
+                        android:textSize="16sp"
+                        android:padding="8dp"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <Button
+                android:id="@+id/proceedButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:text="Proceed"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textAllCaps="true"/>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainOrderInvoice"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.OrderInvoice">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp">
+
+        <ImageView
+            android:layout_gravity="center"
+            android:layout_width="192dp"
+            android:layout_height="192dp"
+            android:src="@drawable/logix_logo"
+            android:padding="8dp"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="AURACODELAB Pvt. Ltd."
+                android:fontFamily="sans-serif-medium"
+                android:textSize="12sp"
+                android:layout_weight="1"
+                android:padding="1dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="GST NO. : APPLIED FOR."
+                android:fontFamily="sans-serif-medium"
+                android:textSize="12sp"
+                android:layout_weight="1"
+                android:padding="1dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="email: logix247india@gmail.com,\nPhno : 6003391411"
+                android:textSize="12sp"
+                android:layout_weight="1"
+                android:padding="1dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Address : Patarkuchi Rd, Basistha Chariali, Guwahati, Assam 781029"
+                android:layout_weight="1"
+                android:textSize="12sp"
+                android:padding="1dp"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_margin="8dp"
+        android:background="@drawable/lavender_border"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Order Invoice"
+        android:textAllCaps="true"
+        android:fontFamily="sans-serif-medium"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_marginTop="6dp"
+        android:padding="8dp"/>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="12dp"
+        android:padding="8dp"
+        android:background="@color/icon_bg">
+
+        <TableRow
+            android:background="#ffffff">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Order ID :"
+                android:textSize="14sp"
+                android:padding="8dp"/>
+
+            <TextView
+                android:id="@+id/orderIDInvoice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1234567908"
+                android:textSize="14sp"
+                android:padding="8dp"/>
+        </TableRow>
+
+        <TableRow
+            android:background="#ffffff"
+            android:layout_marginTop="4dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date And Time :"
+                android:textSize="14sp"
+                android:padding="8dp"/>
+
+            <TextView
+                android:id="@+id/dateInvoice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12-12-12"
+                android:textSize="14sp"
+                android:padding="8dp"/>
+        </TableRow>
+
+        <TableRow
+            android:background="#ffffff"
+            android:layout_marginTop="4dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Created By :"
+                android:textSize="14sp"
+                android:padding="8dp"/>
+
+            <TextView
+                android:id="@+id/createdByInvoice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="xyz@gmail.com"
+                android:textSize="14sp"
+                android:padding="8dp"/>
+        </TableRow>
+
+        <TableRow
+            android:background="#ffffff"
+            android:layout_marginTop="4dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Assigned To :"
+                android:textSize="14sp"
+                android:padding="8dp"/>
+
+            <TextView
+                android:id="@+id/assignedToInvoice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Delivery Partner"
+                android:textSize="14sp"
+                android:padding="8dp"/>
+        </TableRow>
+
+        <TableRow
+            android:background="#ffffff"
+            android:layout_marginTop="4dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Order Description :"
+                android:textSize="14sp"
+                android:padding="8dp"/>
+
+            <TextView
+                android:id="@+id/orderDescInvoice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Order Description"
+                android:textSize="14sp"
+                android:padding="8dp"/>
+        </TableRow>
+
+        <TableRow
+            android:background="#ffffff"
+            android:layout_marginTop="4dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Payment Mode :"
+                android:textSize="14sp"
+                android:padding="8dp"/>
+
+            <TextView
+                android:id="@+id/paymentModeInvoice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Payment at time of Loading"
+                android:textSize="14sp"
+                android:padding="8dp"/>
+        </TableRow>
+
+    </TableLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Thank You For Choosing Logix"
+        android:textStyle="italic"
+        android:fontFamily="sans-serif-medium"
+        android:layout_marginTop="120dp"
+        android:gravity="center"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_margin="8dp"
+        android:background="@drawable/lavender_border"/>
+
+    <Button
+        android:id="@+id/printPDFInvoice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Print"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:layout_marginTop="12dp"/>
+
+</LinearLayout>

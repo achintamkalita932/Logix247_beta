@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "438265223640",
+    "project_id": "logix247-beta",
+    "storage_bucket": "logix247-beta.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:438265223640:android:3b450482eb137b2d7b7aad",
+        "android_client_info": {
+          "package_name": "com.demo.logix247_beta"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBQ7wG85jsHFyN8FdEQ1W5Uw__h6L2_jTU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
